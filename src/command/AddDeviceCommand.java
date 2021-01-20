@@ -35,7 +35,6 @@ public class AddDeviceCommand implements Command {
 			page.sendMessage(new Notification(NotificationCode.NEW_SLOT, slot));
 			break;
 		case "delete":
-//			page.getChildren().remove(slot);
 			slot.sendMessage(new Notification(NotificationCode.DELETE_ME, null));
 			break;
 		case "move":
